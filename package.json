@@ -1,11 +1,13 @@
 {
-  "name": "vite-plugin-ssr-example",
+  "name": "vps-issue-md-auto-import",
   "version": "0.1.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
   },
   "dependencies": {
+    "unplugin-vue-components": "^0.22.4",
+    "vite-plugin-md": "^0.20.2",
     "vite-plugin-ssr": "^0.4.20",
     "vue": "^3.2.37"
   },

@@ -1,7 +1,6 @@
-import { createSSRApp, createApp, h } from "vue";
+import { createSSRApp, h } from "vue";
 
 export async function render(pageContext) {
-  const createAppFunc = document.getElementById("page")?.innerHTML === "" ? createApp : createSSRApp;
-  const page = createAppFunc({ render: _ => h(pageContext.Page, pageContext.pageProps || {}) });
+  const page = createSSRApp({ render: _ => h(pageContext.Page, {}) });
   page.mount("#page");
 }
